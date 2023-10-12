@@ -2,7 +2,7 @@
 
 ## English
 
-### Which stack did i use?
+### What stack did i use?
 - React, JS, SCSS, BEM
   
 ### What did i learn?
