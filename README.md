@@ -20,4 +20,4 @@
 - Todo App для практитки. Я изнучал как использовать пропы, компоненты и useState() хук.
 
 ### Где я могу протестировать приложение?
-- [Here](https://quverok.me/todoListWebSite/)
+- [Здесь](https://quverok.me/todoListWebSite/)
