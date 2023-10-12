@@ -54,6 +54,20 @@
         padding: 10px 20px;
         border: 1px solid #000;
         border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #9B9B9B;
+            border-color: #9B9B9B;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: #000;
+            border-color: #000;
+            color: #fff;
+        }
     }
 
     &__item {
@@ -68,6 +82,7 @@
         align-items: center;
         margin-right: 15px;
         margin-left: 35px;
+        cursor: pointer;
     }
 
     &__checkbox {

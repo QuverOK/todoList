@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { TodoItem } from "./TodoItem"
 
 export default function FilteredTodoList() {
   const [inputValue, setInputValue] = useState("")
@@ -26,6 +27,11 @@ export default function FilteredTodoList() {
           className="todo__input"
           placeholder="Add your new todo"
           onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleClickAdd()
+            }
+          }}
           value={inputValue}
         />
         <button className="todo__button" onClick={handleClickAdd}>
@@ -38,42 +44,5 @@ export default function FilteredTodoList() {
         ))}
       </ul>
     </div>
-  )
-}
-
-export const TodoItem = ({ todo, onDelete }) => {
-  const [check, setCheck] = useState("initial")
-  const [change, setChange] = useState(false)
-
-  const handleChange = () => {
-    if (!change) {
-      setCheck("line-through")
-    } else {
-      setCheck("none")
-    }
-  }
-
-  return (
-    <li className="todo__item">
-      <label className="todo__check" style={{ textDecoration: check }}>
-        <input
-          type="checkbox"
-          onChange={() => {
-            setChange(!change)
-            handleChange()
-          }}
-          className="todo__checkbox"
-          value={change}
-        />
-        <span className="todo__text"></span>
-        <span className="todo__value">{todo.text}</span>
-      </label>
-      <div className="todo__wrapper">
-        <button
-          className="todo__btn"
-          onClick={() => onDelete(todo.id)}
-        ></button>
-      </div>
-    </li>
   )
 }
