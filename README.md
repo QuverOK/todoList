@@ -6,7 +6,7 @@
 - React, JS, SCSS, BEM
   
 ### What did i learn?
-Todo App for practice. I learned how to use Prop, Component and useState() hook.
+- Todo App for practice. I learned how to use Prop, Component and useState() hook.
 
 ### When can i test this app?
 - [Here](https://quverok.me/todoListWebSite/)
@@ -17,7 +17,7 @@ Todo App for practice. I learned how to use Prop, Component and useState() hook.
 - React, JS, SCSS, BEM
   
 ### Что я изучил?
-Todo App для практитки. Я изнучал как использовать пропы, компоненты и useState() хук.
+- Todo App для практитки. Я изнучал как использовать пропы, компоненты и useState() хук.
 
 ### Где я могу протестировать приложение?
 - [Here](https://quverok.me/todoListWebSite/)
